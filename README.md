@@ -7,7 +7,7 @@ There are nine fields:
 
 | Field       | Description          |
 | ------------- |------------- |
-| ascl id     | This is rendered without the preface ascl:. This is a unique identifier assigned by the ASCL following the pattern *yymm:xxx*, where *yy* = year of publication in the ASCL, *mm* = month of publication, *xxx* = sequential number assigned in order of publication | $1600 |
+| ascl id     | rendered without the preface *ascl:*. This is a unique identifier assigned by the ASCL following the pattern *yymm:xxx*, where *yy* = year of publication in the ASCL, *mm* = month of publication, *xxx* = sequential number assigned in order of publication |
 | code title      | usually a short code name separated with a colon from a one-line description or longer name of the code      | 
 | credit | code author(s) name(s)      |
 | abstract | brief description of the code      |
