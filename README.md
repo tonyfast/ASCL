@@ -21,6 +21,6 @@ There are nine fields:
 
 One code (MasQU) that does not have a download site listed and instead has an email address in the Site field. I think that is the only one like that. 
 
-Because there is a lag between indexing codes in the ASCL and ADS ingestion, some bibcodes will not work to retrieve its ADS entry (because it hasn't been created yet)
+Because there is a lag between indexing codes in the ASCL and ADS ingestion, some bibcodes will not work to retrieve its ADS entry (because it hasn't been created yet).
 
 If something is weird in the dataset(s), please let me know. 
