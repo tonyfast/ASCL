@@ -1,7 +1,7 @@
 ASCL
 =========
 
-### This repository stores tools useful for working with the Astrophysics Source Code Library (ASCL) and its data in various formats.
+### This repository stores tools useful for working with the Astrophysics Source Code Library (ASCL; ascl.net) and its data in various formats.
 
 
 ---
