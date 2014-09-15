@@ -1,7 +1,12 @@
-ascl-json
+ASCL
 =========
 
-### ASCL public data in json format. Probably.
+### This repository stores tools useful for working with the Astrophysics Source Code Library (ASCL) and its data in various formats.
+
+
+
+
+#### ASCL public data in json format. Probably.
 
 There are nine fields:  
 
