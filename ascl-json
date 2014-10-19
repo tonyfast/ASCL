@@ -7,8 +7,8 @@
 		"ascl_id":{"@id":"http://schema.org/url","@type":"@id"},
 		"title":"http://schema.org/headline",
 		"credit":"http://schema.org/creator",
-		"abstract":"http://dbpedia.org/page/Abstract",
-		"bibcode":"http://dbpedia.org/page/Bibcode",
+		"abstract":"http://purl.org/dc/terms/abstract",
+		"bibcode":"info:bibcode/",
 		"views":"http://schema.org/interactionCount",
 		"site_list":{
 			"@container":"@set",
