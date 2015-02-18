@@ -1,5 +1,5 @@
 #Change this to the name of your repo 
-baseurl: '/mrhyde' 
+baseurl: '/ascl' 
 
 markdown: kramdown
 highlighter: pygments
@@ -7,4 +7,6 @@ permalink: pretty
 
 collections:
   cards:
+    output: true
+  citations:
     output: true
