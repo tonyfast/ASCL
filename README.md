@@ -1,57 +1,58 @@
-# Who is Mr. Hyde?
+ASCL
+=========
 
-Mr. Hyde is a minimalist implementation of Jekyll and Github pages. 
+### This repository stores tools useful for working with the Astrophysics Source Code Library (ASCL; ascl.net) and its data in various formats.
 
-## The First Time is Free
 
-This repository is designed to get a Github Pages site up and running in less than a minute.  The first time you wish to use this repository; you simply need to fork and make two modifications on Github; BAM! Github Pages.  You can only fork the same repo once, so after the first time you must learn some git/Github.
+---
 
-## Bonus
+#### ASCL public data in json format. Probably.
 
-The entire ``{{site.github}}`` is captured ``/myhyde/github.json`` when you fork this template.
+There are nine fields:  
 
-# How does Jeyll turn into Mr. Hyde?
+| Field       | Description          |
+| ------------- |------------- |
+| ascl id     | rendered without the preface *ascl:*. This is a unique identifier assigned by the ASCL following the pattern *yymm:xxx*, where *yy* = year of publication in the ASCL, *mm* = month of publication, *xxx* = sequential number assigned in order of publication |
+| code title      | usually a short code name separated with a colon from a one-line description or longer name of the code      | 
+| credit | code author(s) name(s)      |
+| abstract | brief description of the code      |
+| site | code's website or download location      |
+| ref | refereed paper using or describing the code      |
+| bibcode | bibcode as used for ADS      |
+| topic ID | thread ID for the code's discussion thread on the forum; the URL follows the pattern: *http://ascl.net/phpBB3/viewtopic.php?t=xxxxx*, where *xxxxx* is the topic ID     |
+| views | the number of times the code as been viewed on the new infrastructure (IOW, since July 10, 2014)      |
 
-1. Fork this Repo
+**NOTES:** 
 
-  *The following steps are required to activate the Github pages for the forked repo.*
+One code (MasQU) does not have a download site listed and instead has an email address in the Site field. I think that is the only one like that. 
 
-2. Go to the repository settings and rename your forked repository
-3. In ``_config.yml``, change ``baseurl: /mrhyde`` to the **exact name** of your repository ``baseurl: /<your-repo-name>``
-4. Create a new card
+Because there is a lag between indexing codes in the ASCL and ADS ingestion, some bibcodes will not work to retrieve its ADS entry (because it hasn't been created yet).
 
-  1. Add a new file to ``_cards``
-  2. Use ``layout: jsonify`` in the yaml front matter or one of the other Jekyll parsers
-  3. Add user-defined variables and content as you would in a post
+If something is weird in the dataset, please let me know. 
 
-5. Access your cards through the compiled json files
+---
 
-> **Why cards?** Jekyll posits that collections are things that are nor data nor posts, but somewhere in between.  Let's consider a collection of cards?
 
-# Jekyll Pre-processors
+#### ASCL public data in xml format. Maybe.
 
-Jekyll is packaged with parsers for Jsonify, Markdown, Sass, and SCSS.  This template has
-some basic templates to use these pre-processors.  
+There are nine fields:  
 
-## Using the Pre-processors
+| Field       | Description          |
+| ------------- |------------- |
+| ascl_id     | rendered without the preface *ascl:*. This is a unique identifier assigned by the ASCL following the pattern *yymm:xxx*, where *yy* = year of publication in the ASCL, *mm* = month of publication, *xxx* = sequential number assigned in order of publication |
+| title      | usually a short code name separated with a colon from a one-line description or longer name of the code      | 
+| credit | code author(s) name(s)      |
+| abstract | brief description of the code      |
+| site | code's website or download location      |
+| ref | refereed paper using or describing the code      |
+| bibcode | bibcode as used for ADS      |
+| topic_id | thread ID for the code's discussion thread on the forum; the URL follows the pattern: *http://ascl.net/phpBB3/viewtopic.php?t=xxxxx*, where *xxxxx* is the topic ID     |
+| views | the number of times the code as been viewed on the new infrastructure (IOW, since July 10, 2014)      |
 
-Each was given a ``_layout`` template.  The templates are trigger using the following layouts
-in the YAML Front Matter:
+**NOTES:** 
 
-**jsonify**
-```
-layout: jsonify
-```
+One code (MasQU) does not have a download site listed and instead has an email address in the Site field. I think that is the only one like that. 
 
-**markdownify**
-```
-layout: mardownify
-```
-Mardownify requires liquid to assign a new variable and parse your own JSON.  
-Liquid does not allow the modification of variables.
+Because there is a lag between indexing codes in the ASCL and ADS ingestion, some bibcodes will not work to retrieve its ADS entry (because it hasn't been created yet).
 
-**sassify**+**scssify**
-```
-layout: sassify # scssify
-```
-Sass without the set-up. Winning!
+If something is weird in the dataset, please let me know. 
