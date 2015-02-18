@@ -1,5 +1,5 @@
 #Change this to the name of your repo 
-baseurl: '/ascl' 
+baseurl: '/ASCL' 
 
 markdown: kramdown
 highlighter: pygments
