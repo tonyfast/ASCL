@@ -10,3 +10,5 @@ collections:
     output: true
   citations:
     output: true
+  api:
+    output: true
