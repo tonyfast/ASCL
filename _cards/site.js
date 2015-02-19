@@ -9,7 +9,7 @@
   
 var cards = [];
 
-{% for card in site.cards %}
+{% for card in site.citations %}
 cards[ {{forloop.index}} ] = {
   title: "{{card.title}}",
   path: "{{card.relative_path}}",

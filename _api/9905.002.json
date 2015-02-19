@@ -1,0 +1,3 @@
+---
+---
+{"bibcode": "1999ascl.soft05002T", "site_list": ["http://space.mit.edu/home/tegmark/icosahedron.html"], "title": "ICOSAHEDRON: A package for pixelizing the sphere", "abstract": "What is the best way to pixelize a sphere? This question occurs in many practical applications, for instance when making maps (of the earth or the celestial sphere) and when doing numerical integrals over the sphere. This package consists of source code and documentation for a method which involves inscribing the sphere in a regular icosahedron and then equalizing the pixel areas.", "views": "37", "credit": "Tegmark, Max", "topic_id": "20396", "ascl_id": "http://ascl.net/9905.002", "ref_list": ["http://adsabs.harvard.edu/abs/1996ApJ...470L..81T"]}
